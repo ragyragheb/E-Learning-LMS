@@ -15,7 +15,7 @@
   }
   
   .topnav a:hover {
-    background-color: white;
+    background-color: #7eb1b3;
     color: black;
   }
   
@@ -39,7 +39,25 @@ body {
     background-image: linear-gradient(to bottom, #000046, #1cb5e0);
     font-family: 'Ubuntu', sans-serif;
 }
-
+.user{
+    width: 76%;
+    color: rgb(38, 50, 56);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: rgba(136, 126, 126, 0.04);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.02);
+    margin-bottom: 50px;
+    margin-left: 46px;
+    text-align: center;
+    margin-bottom: 27px;
+    font-family: 'Ubuntu', sans-serif;
+}
 .loginmain {
     background-color: #FFFFFF;
     width: 400px;
@@ -58,7 +76,6 @@ body {
 }
 
 .un {
-
 width: 76%;
 color: rgb(38, 50, 56);
 font-weight: 700;
@@ -103,7 +120,7 @@ font-family: 'Ubuntu', sans-serif;
 }
 
 .un:hover{
-    background-color: gray;  
+    background-color: #7eb1b3;  
 }
 
 .un:focus, .pass:focus {
@@ -185,7 +202,7 @@ a {
    }
    .btn:hover{
     cursor: pointer;
-    background-color: gray;
+    background-color: #7eb1b3;
    }
 
    .submitbtn{
@@ -198,7 +215,7 @@ a {
 
    .submitbtn:hover{
     cursor: pointer;
-    background-color: gray;
+    background-color: #7eb1b3;
    }
 
     /*First Page*/

@@ -1,37 +1,46 @@
 .topnav {
-    background-color: #333;
+    min-width: 1550px;
+    background-color: #1D2951;
     overflow: hidden;
+    border-radius: 1.5em;
   }
   
   .topnav a {
     float: left;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 20px;
     text-decoration: none;
     font-size: 17px;
   }
   
   .topnav a:hover {
-    background-color: #ddd;
+    background-color: white;
     color: black;
   }
   
-  .topnav a.active {
-    background-color: #4CAF50;
+  .topnav a.active  a:hover{
+    background-color: #1D2951;
     color: white;
   }
 
-
-
+.main{
+    width: 100;
+    background-image: linear-gradient(to bottom, #000046, #1cb5e0);
+    text-align:center;
+    width: 50%;
+}
+html {
+    height: 100%;
+}
 
 /*Login Page*/
 body {
-    background-color: #F3EBF6;
+    background-image: linear-gradient(to bottom, #000046, #1cb5e0);
     font-family: 'Ubuntu', sans-serif;
 }
 
-.main {
+.loginmain {
     background-color: #FFFFFF;
     width: 400px;
     height: 400px;
@@ -49,6 +58,7 @@ body {
 }
 
 .un {
+
 width: 76%;
 color: rgb(38, 50, 56);
 font-weight: 700;
@@ -73,7 +83,7 @@ form.form1 {
 }
 
 .pass {
-        width: 76%;
+width: 76%;
 color: rgb(38, 50, 56);
 font-weight: 700;
 font-size: 14px;
@@ -92,6 +102,9 @@ margin-bottom: 27px;
 font-family: 'Ubuntu', sans-serif;
 }
 
+.un:hover{
+    background-color: gray;  
+}
 
 .un:focus, .pass:focus {
     border: 2px solid rgba(0, 0, 0, 0.18) !important;
@@ -114,36 +127,25 @@ font-family: 'Ubuntu', sans-serif;
     box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
 }
 
-.forgot {
-    text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
-    color: #E1BEE7;
-    padding-top: 15px;
-}
 
 a {
     text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
-    color: #E1BEE7;
+    color: #000046;
     text-decoration: none
 }
 
-@media (max-width: 600px) {
-    .main {
-        border-radius: 0px;
-    }
+
 
         
 .card{
- position:relative;
- display:flex;
- flex-direction:column;
- background-color: #AAAAAA;
- width:15cm;
- height:15cm;
- margin:auto;
- margin-top: 20px;
- word-wrap:break-word;
- background-clip:border-box;
- border:1px solid rgba(0,0,0,.125);
+    background-color: #FFFFFF;
+    margin: 7em auto;
+    width: 400px;
+    height: 400px;
+    margin-left: 70%;
+    margin-top: 20%;
+    border-radius: 1.5em;
+    box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
 }
 
 .form-control {
@@ -154,8 +156,6 @@ a {
     line-height:1.5;
     margin:auto;
     margin-top: 10%;
-    color:#495057;
-    background-color:#fff;
     border:1px solid #ced4da;
     border-radius:0;
    }
@@ -174,30 +174,35 @@ a {
    }
 
    .btn{
-    text-orientation: upright;
-    position: relative;
+    width:80%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
     margin:10%;
-    margin-left: 35%;
+    margin-left:10%;
     padding: 20px;
-    width: 3cm;
-    height: 1cm;  
+    height: 30%;  
+   }
+   .btn:hover{
+    cursor: pointer;
+    background-color: gray;
+   }
+
+   .submitbtn{
+    margin:10%;
+    margin-left: 10%;
+    padding: 10px;
+    width: 80%;
+    height: 10%;
+   }
+
+   .submitbtn:hover{
+    cursor: pointer;
+    background-color: gray;
    }
 
     /*First Page*/
 
-.Head{
-border-bottom:1px solid rgba(0,0,0,.125);    
-background-color:rgba(0,0,0,.03);
-padding:.75rem 1.25rem;
-margin-bottom:0;
-font-size: large;
-text-decoration-line: underline;
-font-weight: bold;
-color:#0F5298;
-text-align: center;
-margin: 30px  40px;
-font-size: 40px;
-}
 
 .line{
     height: 2px;
@@ -208,16 +213,12 @@ font-size: 40px;
     width: 500px;
     position: relative;
 }
-.Course{
-font-size: medium;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-font:aqua;
-text-align: left;
-font-size: 20px;
-}
+
 
 /*Course*/
 .custom-file-input {
+    margin-top: 3%;
+    margin-left: 14%;
     content: 'browse';
     cursor: pointer;
     color: #0F5298;
@@ -225,15 +226,12 @@ font-size: 20px;
   }
 
   .CourseCard{
-    position:relative;
-    display:flex;
-    flex-direction:column;
-    background-color: #C0C0C0;
-    width:500px;
-    height:200px;
-    margin:20px;
-    margin-top: 20px;
-    word-wrap:break-word;
-    background-clip:border-box;
-    border:1px solid rgba(0,0,0,.125);
+      background-color: #FFFFFF;
+    margin: 7em auto;
+    width: 500px;
+    height: 400px;
+    margin-left: 70%;
+    margin-top: 20%;
+    border-radius: 1.5em;
+    box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
    }

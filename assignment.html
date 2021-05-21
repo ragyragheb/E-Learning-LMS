@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="./All.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Add assignment</title>
+</head>
+
+<body class="main">
+    <div class="topnav">
+        <a class="active" href="./Index.html">Home</a>
+        <a href="./Login.html">Logout</a>
+    </div>
+    <div class="CourseCard">
+        <div>
+            <br>
+        </div>
+        <form action="add_assignment.php" method="POST" enctype="multipart/form-data">
+            <label for="fname">Assignment name:</label>
+            <input type="text" id="fname" name="assignment_name"><br>
+            <br>
+            <br>
+            <label for="lname">Assignment description</label>
+            <input type="text" id="lname" name="assignment_desc">
+            <br>
+            <br>
+            <label for="deadline">Assignment deadline</label>
+            <input type="date" id="deadline" name="assignment_deadline">
+
+            <button type="submit" class="un submitbtn" id="submitbtn" name="add" align='center'>Add assignment</button>
+        </form>
+    </div>
+</body>
+
+</html>

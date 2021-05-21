@@ -13,13 +13,17 @@
     <a href="./Login.html">Logout</a>
   </div>
   <div class="CourseCard">
-    <p class="sign">Assignment 1</p>
+    <form action="submit_assignment.php" method="POST">
+      <p class="sign" name="assignm name">Assignment 1</p>
+      <p>Deadline: </p>
+      <p name="deadline"></p>
+
+    </form>
+
     <form action="submit_assignment.php" method="POST" enctype="multipart/form-data">
       Student name: <input type='text' id='name' name='name' />
-      <div>
-        <input type="file" class='un btn' name="assignment_file" align='center'></input>
-        <button type="submit" class="un submitbtn" id="submitbtn" name="submit" align='center'>Submit</button>
-      </div>
+      <input type="file" class='un btn' name="assignment_file" align='center'></input>
+      <button type="submit" class="un submitbtn" id="submitbtn" name="submit" align='center'>Submit</button>
     </form>
   </div>
 </body>

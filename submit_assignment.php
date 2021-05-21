@@ -1,16 +1,17 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "root";
-$dbname = "lms";
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+require 'database_connection.php';
 
-if ($conn->connect_error)
-{
-    echo 'database connection error';
-}
+//to be implemented when the final HTML and ajax are ready
+// $sql ="SELECT name, description, deadline FROM assignment where id = '1'";
+// $stmt = $conn->prepare($sql);
+// $stmt->execute();
+// $result = $stmt->get_result();
+// $row = $result ->fetch_assoc();
+// echo '<div id="deadline">'.$row['deadline'].'</div>';
+// $.ajax({url: "test.php"}).done(function( html ) {
+//     $("#results").append(html);
+// });
 
 if (isset($_POST['submit']))
 {
@@ -28,7 +29,6 @@ if (isset($_POST['submit']))
 
         if ($pdf_blob = fopen($file_tmp, "rb"))
         {
-            //  $fileContents= file_get_contents($_FILES['assignment_file']['tmp_name']);
 
                 $sql = "INSERT INTO submission(file, grade, student_name) VALUES ('$pdf_blob', '-1', '$studentName')";
                 if ($conn->query($sql) === true)

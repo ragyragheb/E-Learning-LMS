@@ -1,10 +1,12 @@
 <!DOCTYPE html>
+
 <head>
   <link rel="stylesheet" href="./All.css">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Chemistry</title>
 </head>
+
 <body class="main">
   <div class="topnav">
     <a class="active" href="./Index.html">Home</a>
@@ -12,8 +14,14 @@
   </div>
   <div class="CourseCard">
     <p class="sign">Assignment 1</p>
-    <div><input type="file" class='un btn'align='center'></input></div>
-    <button type="submit" class="un submitbtn" id="submitbtn" align='center'>Submit</button>
-    </div>
+    <form action="submit_assignment.php" method="POST" enctype="multipart/form-data">
+      Student name: <input type='text' id='name' name='name' />
+      <div>
+        <input type="file" class='un btn' name="assignment_file" align='center'></input>
+        <button type="submit" class="un submitbtn" id="submitbtn" name="submit" align='center'>Submit</button>
+      </div>
+    </form>
+  </div>
 </body>
+
 </html>

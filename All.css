@@ -1,0 +1,288 @@
+.topnav {
+    min-width: 1550px;
+    background-color: #1D2951;
+    overflow: hidden;
+    border-radius: 1.5em;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #7eb1b3;
+    color: black;
+  }
+  
+  .topnav a.active  a:hover{
+    background-color: #1D2951;
+    color: white;
+  }
+
+.main{
+    width: 100;
+    background-image: linear-gradient(to bottom, #000046, #1cb5e0);
+    text-align:center;
+    width: 50%;
+}
+html {
+    height: 100%;
+}
+
+/*Login Page*/
+body {
+    background-image: linear-gradient(to bottom, #000046, #1cb5e0);
+    font-family: 'Ubuntu', sans-serif;
+}
+.user{
+    width: 80%;
+    color: rgb(38, 50, 56);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: rgba(136, 126, 126, 0.04);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.02);
+    margin-bottom: 50px;
+    margin-left: 46px;
+    text-align: center;
+    margin-bottom: 27px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.loginmain {
+    background-color: #FFFFFF;
+    width: 400px;
+    height: 400px;
+    margin: 7em auto;
+    border-radius: 1.5em;
+    box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+}
+
+.sign {
+    padding-top: 5px;
+    color: #8C55AA;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.un {
+width: 76%;
+color: rgb(38, 50, 56);
+font-weight: 700;
+font-size: 14px;
+letter-spacing: 1px;
+background: rgba(136, 126, 126, 0.04);
+padding: 5px 10px;
+border: none;
+border-radius: 20px;
+outline: none;
+box-sizing: border-box;
+border: 2px solid rgba(0, 0, 0, 0.02);
+margin-left: 46px;
+text-align: center;
+margin-bottom: 20px;
+font-family: 'Ubuntu', sans-serif;
+}
+
+
+form.form1 {
+    padding-top: 40px;
+}
+
+.pass {
+width: 76%;
+color: rgb(38, 50, 56);
+font-weight: 700;
+font-size: 14px;
+letter-spacing: 1px;
+background: rgba(136, 126, 126, 0.04);
+padding: 10px 20px;
+border: none;
+border-radius: 20px;
+outline: none;
+box-sizing: border-box;
+border: 2px solid rgba(0, 0, 0, 0.02);
+margin-bottom: 50px;
+margin-left: 46px;
+text-align: center;
+margin-bottom: 27px;
+font-family: 'Ubuntu', sans-serif;
+}
+
+.un:hover{
+    background-color: #7eb1b3;  
+}
+
+.un:focus, .pass:focus {
+    border: 2px solid rgba(0, 0, 0, 0.18) !important;
+    
+}
+
+.submit {
+  cursor: pointer;
+    border-radius: 5em;
+    color: #fff;
+    background: linear-gradient(to right, #9C27B0, #E040FB);
+    border: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 35%;
+    font-size: 13px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+}
+
+
+a {
+    text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+    color: #000046;
+    text-decoration: none
+}
+
+
+
+        
+.card{
+    background-color: #FFFFFF;
+    margin: 7em auto;
+    width: 400px;
+    height: 400px;
+    margin-left: 70%;
+    margin-top: 20%;
+    border-radius: 1.5em;
+    box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+}
+
+.form-control {
+    display:block;
+    width:80%;
+    padding:.375rem .75rem;
+    font-size:.9375rem;
+    line-height:1.5;
+    margin:auto;
+    margin-top: 10%;
+    border:1px solid #ced4da;
+    border-radius:0;
+   }
+
+   .card-header {
+    text-align: center;
+    text-decoration-line: underline;
+    padding:.75rem 1.25rem;
+    margin-bottom:0;
+    background-color:rgba(0,0,0,.03);
+    border-bottom:1px solid rgba(0,0,0,.125)
+   }
+
+   .text-center {
+    text-align:center!important
+   }
+
+   .btn{
+    width:80%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin:10%;
+    margin-left:10%;
+    padding: 20px;
+    height: 30%;  
+   }
+   .btn:hover{
+    cursor: pointer;
+    background-color: #7eb1b3;
+   }
+
+   .submitbtn{
+    margin: 2px;
+    margin-left: 2%;
+    padding: 10px;
+    width: 80%;
+    height: 10%;
+   }
+
+   .submitbtn2{
+    margin: 2px;
+    margin-left: 8%;
+    padding: 10px;
+    width: 80%;
+    height: 10%;
+   }
+
+   .submitbtn:hover{
+    cursor: pointer;
+    background-color: #7eb1b3;
+   }
+
+    /*First Page*/
+
+
+.line{
+    height: 2px;
+    border-width:0px ;
+    color:#EEEFF3;
+    background-color:#EEEFF3;
+    margin-top: 10px ;
+    width: 500px;
+    position: relative;
+}
+
+
+/*Course*/
+.custom-file-input {
+    margin-top: 3%;
+    margin-left: 14%;
+    content: 'browse';
+    cursor: pointer;
+    color: #0F5298;
+    text-decoration: underline;
+  }
+
+  .CourseCard{
+      background-color: #FFFFFF;
+    margin: 7em auto;
+    width: 600px;
+    height: 600px;
+    margin-left: 60%;
+    margin-top: 20%;
+    border-radius: 1.5em;
+    box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+   }
+   .addass{
+    margin:auto;
+   
+    padding: 20px;
+    height: 10%;
+    width: 76%;
+    color: rgb(38, 50, 56);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: rgba(136, 126, 126, 0.04);
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.02);
+    margin-left: 30px;
+    text-align: center;
+    margin-top: 100px;
+    font-family: 'Ubuntu', sans-serif;
+
+   }
+   .addass:hover{
+    cursor: pointer;
+    background-color: #7eb1b3;
+   }

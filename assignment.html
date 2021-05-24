@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<head>
+    <script type="module">
+        import {addAssignment} from './js/addAssignment.js';
+        window.addAssignment = (event) => {addAssignment(event)};
+    </script>
+    <script></script>
+    <link rel="stylesheet" href="./All.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Add assignment</title>
+</head>
+
+<body class="main">
+    <div class="topnav">
+        <a class="active" href="./Index.html">Home</a>
+        <a href="./Login.html">Logout</a>
+    </div>
+    <div class="CourseCard">
+        <div>
+            <br>
+        </div>
+        <form onsubmit="addAssignment(event)">
+            <label for="assignment_name">Assignment name:</label>
+            <input type="text" id="assignment_name" name="assignment_name"><br>
+            <br>
+            <br>
+            <label for="assignment_desc">Assignment description</label>
+            <input type="text" id="assignment_desc" name="assignment_desc">
+            <br>
+            <br>
+            <label for="deadline">Assignment deadline</label>
+            <input type="date" id="deadline" name="assignment_deadline">
+
+            <button type="submit" class="un submitbtn" id="submitbtn" name="add" align='center'>Add assignment</button>
+        </form>
+    </div>
+</body>
+
+</html>

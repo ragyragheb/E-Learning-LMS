@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<head>
+  <link rel="stylesheet" href="./All.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>E-Learning LMS</title>
+  <script type="text/javascript">
+    function Login() {
+
+    //   var request = new XMLHttpRequest();
+
+    // request.open("GET", "greet.php?fname=John&lname=Clark");
+
+    // request.onreadystatechange = function() {
+
+    //     if(this.readyState === 4 && this.status === 200) {
+    //         // Inserting the response from server into an HTML element
+    //         document.getElementById("result").innerHTML = this.responseText;
+    //     }
+    // };
+
+    // // Sending the request to the server
+    // request.send();
+
+      var username = document.getElementById("x").value;
+      var pw = document.getElementById("y").value;
+
+      if (username == "doctor" && pw=="d1234") {
+          window.location = "Doctor.html";
+            }
+
+      else if(username == "student" && pw=="s1234") {
+          window.location = "Course.html";
+      }
+      
+      else{
+        alert("Please Enter a Valid Username And Password");
+      }
+      
+      return false;
+        }
+
+  </script>
+</head>
+
+<body>
+  <div class="loginmain">
+    <p class="sign" align="center">E-Learning LMS</p>
+    <form class="form1" name="inputForm" onsubmit="return Login()">
+      <input name="fname" class="user" id="x" type="text" align="center" placeholder="Username" required>
+      <input name="pname" class="pass" id="y" type="password" align="center" placeholder="Password" required>
+      <div class="alert alert-danger fade in">
+      <input type="submit" id="submitBtn" class="submit" value="Login" align="center">
+    </form>
+  </div>
+
+</body>
+
+</html>

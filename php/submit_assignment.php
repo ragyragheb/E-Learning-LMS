@@ -15,8 +15,6 @@ require 'database_connection.php';
 
 if (isset($_POST['submit']))
 {
-    echo "Hello";
-    
     $student_name = $_POST['student_name'];
     $assignment_id = $_POST['assignment_id'];
 

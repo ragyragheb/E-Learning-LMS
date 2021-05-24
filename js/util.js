@@ -1,7 +1,3 @@
-export const onClick = () => {
-    console.log("h");
-}
-
 export const AJAX_REQUEST =  (type,endpoint,payload,file_upload)=> {
     return new Promise(function (resolve, reject) {
         const objXMLHttpRequest = new XMLHttpRequest();

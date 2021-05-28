@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 
-<head>  
+<head>
   <script type="module">
-    import {getAssignment,addSubmission} from './js/assignmentSubmission.js';
+    import { getAssignment, addSubmission } from './js/upload_assignment_submission.js';
     window.onload = () => {
       const urlParams = new URLSearchParams(window.location.search);
       const assignment_id = urlParams.get('id');
       getAssignment(assignment_id);
-      window.addSubmission = (event) => {addSubmission(event,assignment_id);};
+      window.addSubmission = (event) => { addSubmission(event, assignment_id); };
     }
   </script>
-  
+
   <link rel="stylesheet" href="./All.css">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -26,18 +26,19 @@
     <p class="sign" id="assignment_name"></p>
     <p class="sign">The deadline is: <span id="assignment_deadline"></span></p>
 
-    <form onsubmit="addSubmission(event)">
-            <label for="student_name">Student name:</label>
-            <input type="text" id="student_name" name="student_name">
-            <br/>
-            <br/>
-            <br/>
-            <label for="file">Upload Submission</label>
-            <input type="file" name="file" class='un btn' id="file"></input>
-            <button type="submit" class="un submitbtn" id="submitbtn" align='center'>Submit</button>
-        </form>
-    
-    
+    <form>
+      <label for="student_name">Student name:</label>
+      <input type="text" id="student_name" name="student_name">
+      <br />
+      <br />
+      <br />
+      <label for="file">Upload Submission</label>
+      <input type="file" name="file" class='un btn' id="file"></input>
+      <button type="submit" class="un submitbtn" id="submitbtn" align='center'
+        onclick="addSubmission(event)">Submit</button>
+    </form>
+
+
   </div>
 </body>
 

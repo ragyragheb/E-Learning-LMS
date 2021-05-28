@@ -1,8 +1,7 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "";
-//$dbname = "lms";
+$password = "root";
 $dbname = "ELearning";
 
 // Create connection

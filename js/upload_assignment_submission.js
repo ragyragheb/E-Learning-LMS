@@ -7,6 +7,7 @@ export const getAssignment = (id) => {
             data => {
                 const assignment = JSON.parse(data); //Parsing from a string JSON to an accessible JSON.
                 document.getElementById("assignment_name").append(assignment.name);
+                document.getElementById("description").append(assignment.description);
                 document.getElementById("assignment_deadline").append(assignment.deadline);
             },
             error => {

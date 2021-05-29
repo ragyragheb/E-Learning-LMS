@@ -16,17 +16,12 @@ ajax.onreadystatechange = function () {
             var assignmentName = data[a].name;
 
             var assignment = document.createElement('li');
-            assignment.textContent = assignmentName;
 
-            // var link = document.createElement('a');
-            // link.href = "./upload_assignment_submission.html? id =" + id;
+            var link = document.createElement('a');
+            link.href = "./upload_assignment_submission.html?id=" + id;
+            link.innerHTML = assignmentName;
 
-            // assignment.appendChild(link);
-
-            assignment.addEventListener("click", function (e) {
-                window.location = "./upload_assignment_submission.html?id=" + id;
-            });
-
+            assignment.appendChild(link);
             assignments_list.appendChild(assignment);
 
         }

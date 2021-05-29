@@ -30,16 +30,19 @@ ajax.onreadystatechange = function () { //Call a function when the state changes
             e.preventDefault();
             var grade = document.getElementById("assignm_grade").value;
             var id = data.id;
-            var ajax = new XMLHttpRequest();
-            ajax.open("POST", "./php/fetch_submission_details.php", true);
-            var params = "submission_id=" + id + "&grade=" + grade;
-            ajax.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-            ajax.send(params);
-            ajax.onreadystatechange = function () {
-                if (this.readyState == 4 && this.status == 200) {
-                    alert("Grade Updated!");
+            if (grade >= 0) {
+                var ajax = new XMLHttpRequest();
+                ajax.open("POST", "./php/fetch_submission_details.php", true);
+                var params = "submission_id=" + id + "&grade=" + grade;
+                ajax.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                ajax.send(params);
+                ajax.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {
+                        alert("Grade Updated!");
+                    }
                 }
             }
+            else { alert("Grade must be a positive number"); return; }
         }
     }
 };
